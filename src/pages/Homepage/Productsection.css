@@ -1,0 +1,328 @@
+/* ==========================
+   Product Section
+========================== */
+
+.productcard1 {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.productheading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-inline: 15px;
+}
+
+.productheading h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+}
+
+.productheading a {
+    font-size: 14px;
+    color: #0156FF;
+    text-decoration: underline;
+    transition: .3s;
+}
+
+.productheading a:hover {
+    color: #013bb5;
+}
+
+.productheading div {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.productheading div span,
+.productheading div p {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.productheading div span {
+    color: #000;
+    text-decoration: underline;
+    text-decoration-color: #0156FF;
+    text-decoration-thickness: 2px;
+}
+
+.productheading div span:hover {
+    color: #0156FF;
+}
+
+.productheading div p {
+    color: #7b7b7b;
+}
+
+.productheading div p:hover {
+    color: #0156FF;
+}
+
+
+/* ==========================
+   Product Slider
+========================== */
+
+.product-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 5px 15px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.product-container1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.product-container::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* ==========================
+   Offer Banner
+========================== */
+
+.offersection {
+    width: 100%;
+    min-height: 70px;
+    margin: 15px 0;
+    padding: 15px;
+    background: #F5F7FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    text-align: center;
+}
+
+.offersection img {
+    width: 75px;
+    height: auto;
+}
+
+.offersection span {
+    color: #272560;
+    font-size: 15px;
+}
+
+
+/* ==========================
+   Custom Build Card
+========================== */
+
+.custombuild {
+    min-width: 230px;
+    min-height: 350px;
+      background-image: url(../../assets/custom-build.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px;
+
+    color: white;
+}
+
+.custombuild div {
+    margin-top: auto;
+    margin-bottom: auto;
+
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.custombuild a {
+    color: white;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.background2 {
+    background-image: url("../../assets/background2.png");
+}
+
+.background3 {
+    background-image: url("../../assets/background3.png");
+}
+
+.background4 {
+    background-image: url("../../assets/background4.png");
+}
+
+
+/* ==========================
+   Company Logos
+========================== */
+
+.companylogo {
+    margin: 40px 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 25px;
+    align-items: center;
+    justify-items: center;
+}
+
+.companylogo img {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+
+    opacity: .85;
+    transition: .3s ease;
+}
+
+.companylogo img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.blog-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    padding: 5px;
+}
+
+
+/* =================================
+      Responsive
+=================================== */
+
+@media (max-width:1200px){
+
+    .productheading{
+        flex-wrap:wrap;
+    }
+
+    .custombuild{
+        min-width:220px;
+    }
+
+}
+
+
+@media (max-width:992px){
+
+    .productheading h4{
+        font-size:20px;
+    }
+
+    .offersection{
+        flex-direction:column;
+    }
+
+    .offersection span{
+        font-size:14px;
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    .productheading{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .productheading div{
+        gap:15px;
+    }
+
+    .custombuild{
+        min-width:200px;
+        min-height:320px;
+    }
+
+    .custombuild div{
+        font-size:20px;
+    }
+
+    .companylogo{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+}
+
+
+@media (max-width:576px){
+
+    .productcard1{
+        gap:15px;
+    }
+
+    .productheading{
+        padding-inline:10px;
+    }
+
+    .productheading h4{
+        font-size:18px;
+    }
+
+    .productheading div{
+        font-size:14px;
+    }
+
+    .offersection{
+        padding:20px 10px;
+    }
+
+    .offersection img{
+        width:60px;
+    }
+
+    .custombuild{
+        min-width:180px;
+        min-height:280px;
+    }
+
+    .custombuild div{
+        font-size:18px;
+    }
+
+    .companylogo{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+
+@media (max-width:400px){
+
+    .custombuild{
+        min-width:165px;
+        min-height:250px;
+    }
+
+    .custombuild div{
+        font-size:16px;
+    }
+
+    .companylogo{
+        grid-template-columns:1fr;
+    }
+
+}

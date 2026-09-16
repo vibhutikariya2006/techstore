@@ -1,0 +1,40 @@
+.blog-card{
+    width:235px;
+    background:#fff;
+    border-radius:4px;
+    overflow:hidden;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.blog-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.blog-card-image{
+    width:100%;
+    height:151.11px;
+    object-fit:cover;
+}
+
+.blog-card-content{
+    padding:20px;
+    text-align:center;
+}
+
+
+
+.blog-card-content p{
+    color:#000000;
+    line-height:100%;
+    font-size:12px;
+    margin-bottom:18px;
+    font-weight: 400;
+}
+
+.blog-card-content span{
+    color:#A2A6B0;
+    font-size:10px;
+    font-weight: 400;
+}

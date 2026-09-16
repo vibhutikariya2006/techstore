@@ -1,0 +1,859 @@
+/*========================================
+Google Font
+========================================*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+/*========================================
+Global
+========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Inter",sans-serif;
+}
+
+body{
+    background:#ffffff;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+li{
+    list-style:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+button{
+    cursor:pointer;
+    border:none;
+    outline:none;
+    background:none;
+}
+
+input{
+    border:none;
+    outline:none;
+}
+
+/*========================================
+TOP BAR
+========================================*/
+
+.topbar{
+    width:100%;
+    height:44px;
+    background:#020202;
+    color:#fff;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 60px;
+
+    font-size:13px;
+}
+
+.top-left{
+    display:flex;
+    align-items:center;
+}
+
+.top-left span{
+    display:flex;
+    align-items:center;
+    gap:6px;
+}
+
+.top-left strong{
+    font-weight:600;
+}
+
+.down-icon{
+    font-size:10px;
+}
+
+.top-center{
+    color:#A2A6B0;
+}
+
+.contact-link{
+    margin-left:6px;
+    color:#fff;
+    font-weight:600;
+    cursor:pointer;
+    border-bottom:1px solid #fff;
+}
+
+.top-right{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.top-right span{
+    font-weight:500;
+}
+
+.social{
+    font-size:15px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.social:hover{
+    color:#0156FF;
+}
+
+/*========================================
+DESKTOP NAVBAR
+========================================*/
+
+.desktop-navbar{
+
+    width:100%;
+    height:92px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 60px;
+
+    background:#fff;
+
+    border-bottom:1px solid #ECECEC;
+}
+
+/*========================================
+LOGO
+========================================*/
+
+.logo{
+    flex-shrink:0;
+
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:85px;
+    height:auto;
+}
+
+/*========================================
+NAV LINKS
+========================================*/
+
+.nav-links{
+
+    display:flex;
+    align-items:center;
+    gap:30px;
+
+    margin-left:30px;
+
+    flex:1;
+}
+
+.nav-links li{
+
+    font-size:14px;
+    font-weight:600;
+
+    color:#000;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.nav-links li:hover{
+
+    color:#0156FF;
+}
+
+/*========================================
+RIGHT SECTION
+========================================*/
+
+.nav-right{
+
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+/*========================================
+REMIX ICONS
+========================================*/
+
+.nav-right i{
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.nav-right i:hover{
+
+    color:#0156FF;
+}
+
+/*========================================
+CART
+========================================*/
+
+.cart{
+
+    position:relative;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.cart i{
+
+    font-size:24px;
+}
+
+.badge{
+
+    position:absolute;
+
+    top:-8px;
+    right:-8px;
+
+    width:18px;
+    height:18px;
+
+    border-radius:50%;
+
+    background:#0156FF;
+    color:#fff;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:10px;
+    font-weight:600;
+}
+
+/*========================================
+PROFILE IMAGE
+========================================*/
+
+.profile{
+
+    width:38px;
+    height:38px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    cursor:pointer;
+}
+/*========================================
+TABLET NAVBAR
+========================================*/
+
+.tablet-navbar{
+    display:none;
+    width:100%;
+    background:#0156FF;
+}
+
+/*========================================
+TABLET TOP BAR
+========================================*/
+
+.tablet-top{
+
+    height:50px;
+    background:#020202;
+    color:#fff;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 25px;
+
+    font-size:13px;
+}
+
+.tablet-contact{
+
+    font-weight:500;
+}
+
+.tablet-contact strong{
+    font-weight:700;
+}
+
+.tablet-contact2{
+
+    cursor:pointer;
+
+    border-bottom:1px solid #fff;
+
+    font-weight:600;
+}
+
+/*========================================
+TABLET BOTTOM
+========================================*/
+
+.tablet-bottom{
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:18px 25px;
+}
+
+/*========================================
+HAMBURGER
+========================================*/
+
+.menu-icon{
+
+    color:#fff;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    margin-right:20px;
+}
+
+/*========================================
+TABLET LOGO
+========================================*/
+
+.tablet-bottom .logo{
+
+    margin-right:25px;
+}
+
+.tablet-bottom .logo img{
+
+    width:75px;
+
+    height:auto;
+}
+
+/*========================================
+SEARCH BOX
+========================================*/
+
+.tablet-search{
+
+    flex:1;
+
+    height:48px;
+
+    background:#fff;
+
+    border-radius:40px;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 18px;
+}
+
+.tablet-search i{
+
+    color:#A2A6B0;
+
+    font-size:18px;
+}
+
+.tablet-search svg{
+
+    color:#A2A6B0;
+
+    font-size:18px;
+}
+
+.tablet-search input{
+
+    width:100%;
+
+    margin-left:12px;
+
+    font-size:15px;
+
+    background:transparent;
+}
+
+.tablet-search input::placeholder{
+
+    color:#A2A6B0;
+}
+
+/*========================================
+TABLET RIGHT ICONS
+========================================*/
+
+.tablet-icons{
+
+    display:flex;
+    align-items:center;
+
+    gap:25px;
+
+    margin-left:25px;
+
+    color:#fff;
+}
+
+.tablet-icons i{
+
+    font-size:24px;
+
+    cursor:pointer;
+}
+
+.tablet-icons .user{
+
+    font-size:26px;
+
+    cursor:pointer;
+}
+
+/*========================================
+TABLET CART
+========================================*/
+
+.tablet-icons .cart{
+
+    position:relative;
+}
+
+.tablet-icons .cart i{
+
+    font-size:24px;
+}
+
+.tablet-icons .badge{
+
+    background:#fff;
+
+    color:#0156FF;
+
+    top:-7px;
+
+    right:-7px;
+}/*========================================
+MOBILE NAVBAR
+========================================*/
+
+.mobile-navbar{
+    display:none;
+    width:100%;
+    background:#0156FF;
+}
+
+/*========================================
+MOBILE TOP BAR
+========================================*/
+
+.mobile-top{
+
+    height:48px;
+
+    background:#020202;
+
+    color:#fff;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 15px;
+
+    font-size:12px;
+}
+
+.mobile-time{
+
+    display:flex;
+    align-items:center;
+    gap:6px;
+
+    font-weight:500;
+}
+
+.mobile-time strong{
+    font-weight:700;
+}
+
+.mobile-call{
+
+    font-weight:500;
+}
+
+/*========================================
+MOBILE MIDDLE
+========================================*/
+
+.mobile-middle{
+
+    height:80px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 15px;
+}
+
+/*========================================
+HAMBURGER
+========================================*/
+
+.mobile-middle .menu-icon{
+
+    color:#fff;
+
+    font-size:28px;
+
+    cursor:pointer;
+}
+
+/*========================================
+LOGO
+========================================*/
+
+.mobile-middle .logo{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.mobile-middle .logo img{
+
+    width:80px;
+
+    height:auto;
+}
+
+/*========================================
+OUR DEALS BUTTON
+========================================*/
+
+.deal-btn{
+
+    background:transparent;
+
+    border:2px solid #fff;
+
+    color:#fff;
+
+    padding:10px 22px;
+
+    border-radius:30px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.deal-btn:hover{
+
+    background:#fff;
+
+    color:#0156FF;
+}
+
+/*========================================
+MOBILE ICONS
+========================================*/
+
+.mobile-middle i{
+
+    color:#fff;
+
+    font-size:24px;
+
+    cursor:pointer;
+}
+
+.mobile-middle .user{
+
+    color:#fff;
+
+    font-size:28px;
+}
+
+/*========================================
+MOBILE CART
+========================================*/
+
+.mobile-middle .cart{
+
+    position:relative;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.mobile-middle .cart i{
+
+    font-size:24px;
+}
+
+.mobile-middle .badge{
+
+    background:#fff;
+
+    color:#0156FF;
+
+    top:-7px;
+
+    right:-7px;
+}
+
+/*========================================
+SEARCH BAR
+========================================*/
+
+.mobile-search{
+
+    width:calc(100% - 30px);
+
+    height:52px;
+
+    margin:0 auto 20px;
+
+    background:#fff;
+
+    border-radius:35px;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 18px;
+}
+
+.mobile-search svg{
+
+    color:#A2A6B0;
+
+    font-size:18px;
+}
+
+.mobile-search i{
+
+    color:#A2A6B0;
+
+    font-size:18px;
+}
+
+.mobile-search input{
+
+    width:100%;
+
+    margin-left:12px;
+
+    font-size:15px;
+
+    background:transparent;
+}
+
+.mobile-search input::placeholder{
+
+    color:#A2A6B0;
+}
+/*========================================
+LAPTOP
+========================================*/
+
+@media (max-width: 1200px) {
+
+  .topbar {
+    padding: 0 35px;
+  }
+
+  .desktop-navbar {
+    padding: 0 35px;
+  }
+
+  .nav-links {
+    gap: 18px;
+    margin-left: 20px;
+  }
+
+  .nav-links li {
+    font-size: 13px;
+  }
+
+  .nav-right {
+    gap: 18px;
+  }
+
+  .logo img {
+    width: 75px;
+  }
+
+}
+
+/*========================================
+TABLET
+========================================*/
+
+@media (max-width: 991px) {
+
+  .topbar,
+  .desktop-navbar {
+    display: none;
+  }
+
+  .tablet-navbar {
+    display: block;
+  }
+
+  .tablet-top {
+    padding: 0 20px;
+  }
+
+  .tablet-bottom {
+    padding: 16px 20px;
+  }
+
+  .tablet-search {
+    height: 46px;
+  }
+
+  .tablet-search input {
+    font-size: 14px;
+  }
+
+  .tablet-icons {
+    gap: 18px;
+  }
+
+  .tablet-bottom .logo img {
+    width: 70px;
+  }
+
+}
+
+/*========================================
+MOBILE
+========================================*/
+
+@media (max-width:768px) {
+
+  .tablet-navbar {
+    display: none;
+  }
+
+  .mobile-navbar {
+    display: block;
+  }
+
+  .mobile-middle {
+    padding: 0 15px;
+  }
+
+  .deal-btn {
+    padding: 9px 18px;
+    font-size: 14px;
+  }
+
+  .mobile-middle .logo img {
+    width: 58px;
+  }
+
+}
+
+/*========================================
+SMALL MOBILE
+========================================*/
+
+@media (max-width:576px) {
+
+  .mobile-top {
+    padding: 0 12px;
+    font-size: 11px;
+  }
+
+  .mobile-call {
+    display: none;
+  }
+
+  .mobile-middle {
+    gap: 12px;
+  }
+
+  .deal-btn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  .mobile-middle .logo img {
+    width: 52px;
+  }
+
+  .mobile-middle i {
+    font-size: 22px;
+  }
+
+  .mobile-search {
+    height: 48px;
+    width: calc(100% - 24px);
+  }
+
+}
+
+/*========================================
+EXTRA SMALL MOBILE
+========================================*/
+
+@media (max-width:420px) {
+
+  .mobile-middle {
+    gap: 8px;
+    padding: 0 10px;
+  }
+
+  .deal-btn {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+
+  .mobile-middle .logo img {
+    width: 80px;
+  }
+
+  .mobile-search {
+    height: 45px;
+  }
+
+  .mobile-search input {
+    font-size: 13px;
+  }
+
+}
